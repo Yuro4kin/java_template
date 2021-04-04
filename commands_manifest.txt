@@ -1,0 +1,10 @@
+jar cfe Lotto.jar Lotto Lotto.class Lotto.png		// jar
+jar tf Lotto.jar					// manifest
+jar ufm Lotto.jar permissions.txt			// add manifest in jar
+jar xf Lotto.jar META-INF				// information of manifest
+
+Example 1: to archive two class files into an archive called classes.jar:
+       jar cvf classes.jar Foo.class Bar.class
+Example 2: use an existing manifest file 'mymanifest' and archive all the
+           files in the foo/ directory into 'classes.jar':
+       jar cvfm classes.jar mymanifest -C foo/ .

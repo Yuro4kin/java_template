@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jnlp spec='1.0' href='launch.jnlp' version='1.0-SNAPSHOT' codebase='http://localhost:8080/'>
+  <information>
+    <title>lab8</title>
+    <vendor>com.hania</vendor>
+  </information>
+  <security>
+    <all-permissions/>
+  </security>
+  <resources>
+    <j2se version='1.0+' max-heap-size='256m'/>
+    <jar href='lib/lab8__V1.0-SNAPSHOT-calc.jar' main='true'/>
+    <property name='jnlp.versionEnabled' value='true'/>
+  </resources>
+  <application-desc main-class='com.hania.Runner'>
+    <argument>-verbose</argument>
+  </application-desc>
+</jnlp>
+
+// https://github.com/hvvka/web-start
